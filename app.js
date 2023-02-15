@@ -45,3 +45,16 @@ console.log(player);
 player.lastname = "Potato";
 player.points = player.points + 69,
 console.log(player.points);
+
+function sayHello(nameOfPerson, age){
+    console.log("Hello my name is " + nameOfPerson + "and I'm " + age);
+}
+
+sayHello("Jimuel", 23);
+sayHello("Regie", 22);
+sayHello("Rj", 29);
+
+function plus(a, b){
+    console.log(a + b);
+}
+plus(8, 60);
