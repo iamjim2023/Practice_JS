@@ -54,7 +54,21 @@ sayHello("Jimuel", 23);
 sayHello("Regie", 22);
 sayHello("Rj", 29);
 
-function plus(a, b){
-    console.log(a + b);
+function plus(firstNumber, secondNumber){
+    console.log(firstNumber + secondNumber);
+}
+function divide(a, b){
+    console.log(a / b);
 }
 plus(8, 60);
+divide(98, 20);
+
+const player = {
+    name: "jimuel",
+    sayHello: function (otherPersonsName) 
+    {
+        console.log("helo! " + otherPersonsName + " nice to meet you!");
+    },
+};
+console.sayHello(player.name);
+player.sayHello("jimuel");
