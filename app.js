@@ -91,3 +91,15 @@ player.name = "nicolas";
 console.log(player);
 player.sexy = "soon";
 console.log(player);
+
+function minusFive(potato){
+    console.log(potato - 5);
+}
+plus(5, 10, 5, 3, 5, 2, 1, 6, 1);
+
+const calculator = {
+    add: function(a, b){
+        console.log(a, b);
+    },
+};
+calculator.add(5, 1);
