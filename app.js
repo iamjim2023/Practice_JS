@@ -99,19 +99,20 @@ plus(5, 10, 5, 3, 5, 2, 1, 6, 1);
 
 const calculator = {
     add: function(a, b){
-        alert(a + b);
+        return a + b;
     },
     minus: function (a, b){
-        alert(a - b);
+        return a - b;
     },
     times: function (a, b){
-        alert(a * b);
+        return a * b;
     },
     divide: function (a, b){
-        alert(a / b);
+        return a / b;
     },
     power: function (a, b){
-        alert(a ** b);
+        return a ** b;
     },
 };
-calculator.log(calculator.plus(2, 3));
+const plusResult = calculator.plus(2, 3);
+console.log(plusResult);
