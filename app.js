@@ -64,15 +64,30 @@ function divide(a, b){
 plus(8, 60);
 divide(98, 20);
 
-// ask for sir peter whats wrong with this code
+ const employee = {
+    name: "jimuel",
+    sayHello: function (otherPersonsName) 
+    {
+        console.log("hello! " + otherPersonsName + " nice to meet you!");
+    },
+};
+console.log(employee.name);
+employee.sayHello("regie");
 
-// const player = {
-    //name: "jimuel",
-    //sayHello: function (otherPersonsName) 
-    //{
-        //console.log("helo! " + otherPersonsName + " nice to meet you!");
-    //},
-//};
-//console.log(player.name);
-//player.sayHello("regie");
+const toBuy = ["potato","tomato","pizza"];
 
+console.log(toBuy);
+toBuy[2] = "water";
+console.log(toBuy);
+toBuy.push("meat");
+console.log(toBuy);
+
+const manager = {
+    name: "Jim",
+    age: 98,
+};
+console.log(player);
+player.name = "nicolas";
+console.log(player);
+player.sexy = "soon";
+console.log(player);
