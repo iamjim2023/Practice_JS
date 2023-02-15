@@ -98,7 +98,7 @@ function minusFive(potato){
 plus(5, 10, 5, 3, 5, 2, 1, 6, 1);
 
 const calculator = {
-    add: function(a, b){
+    plus: function(a, b){
         return a + b;
     },
     minus: function (a, b){
@@ -115,5 +115,7 @@ const calculator = {
     },
 };
 const plusResult = calculator.plus(2, 3);
- 
-console.log(plusResult);
+const minusResult = calculator.minus(plusResult, 10);
+const timeResult = calculator.times(10, minusResult);
+const divideResult = calculator.divide(timeResult, plusResult);
+const powerResult = calculator.power(divideResult, minusResult);
