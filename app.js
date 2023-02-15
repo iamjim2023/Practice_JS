@@ -60,6 +60,7 @@ function plus(firstNumber, secondNumber){
 function divide(a, b){
     console.log(a / b);
 }
+
 plus(8, 60);
 divide(98, 20);
 
@@ -70,5 +71,5 @@ const player = {
         console.log("helo! " + otherPersonsName + " nice to meet you!");
     },
 };
-console.sayHello(player.name);
-player.sayHello("jimuel");
+console.log(player.name);
+player.sayHello("regie");
