@@ -122,8 +122,8 @@ const powerResult = calculator.power(divideResult, minusResult);
 
 const age1= parseInt(prompt("How old are you?"));
 
-if(isNaN(age1)){
-    console.log("Please write a number.");
+if(isNaN(age1) || age1 < 0){ 
+    console.log("Please write a real positive number.");
 }else if(age1 < 18) {
     console.log("You are too young.");
 }else if(age1 >= 18 && age1 <= 50){
