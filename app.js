@@ -110,7 +110,7 @@ const calculator = {
     divide: function (a, b){
         return a / b;
     },
-    power: function (a, b){
+    power: function (a, b){ 
         return a ** b;
     },
 };
@@ -119,3 +119,7 @@ const minusResult = calculator.minus(plusResult, 10);
 const timeResult = calculator.times(10, minusResult);
 const divideResult = calculator.divide(timeResult, plusResult);
 const powerResult = calculator.power(divideResult, minusResult);
+
+const age = prompt("How old are you?"); 
+
+console.log(age, parseInt(age));
