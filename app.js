@@ -120,6 +120,11 @@ const timeResult = calculator.times(10, minusResult);
 const divideResult = calculator.divide(timeResult, plusResult);
 const powerResult = calculator.power(divideResult, minusResult);
 
-const age = prompt("How old are you?"); 
+const age1= parseInt(prompt("How old are you?"));
 
-console.log(age, parseInt(age));
+if(isNaN(age1)){
+    console.log("Please write a number.");
+}else{
+    console.log("Thankyou for writing your age.");
+}
+
