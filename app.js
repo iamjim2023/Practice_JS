@@ -1,3 +1,43 @@
+const h1 = document.querySelector("div.hello:first-child h1");
+
+console.dir(h1);
+
+function handleh1Click(){
+    h1.style.color = "blue";
+}
+
+function handleMouseEnter(){
+    h1.innerText = "Mouse is here!";
+}
+
+function handleMouseLeave(){
+    h1.innerText = "Mouse is gone!";
+}
+
+function handleWindowResize(){
+    document.body.style.backgroundColor = "Tomato";
+}
+
+function handleWindowCopy(){
+    alert("copier!");
+}
+
+function handleWindowOffline(){
+    alert("S0S no WIFI");
+}
+
+function handleWindowOnline(){
+    alert("All good");
+}
+h1.addEventListener("click", handleh1Click);
+h1.addEventListener("mouseenter", handleMouseEnter)
+h1.addEventListener("mouseleave", handleMouseLeave);
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
+
 const a = 5;
 const b = 10;
 let myName = "Jim";
@@ -139,11 +179,34 @@ const h1 = document.querySelector("div.hello:first-child h1");
 function handleTitleClick(){
     const currentColor = h1.style.color;
     let newColor;
-    if(h1.style.color === "blue"){
-        h1.style.color = "tomato";
+    if(newColor === "blue"){
+        newColor = "tomato";
     }else{
-        h1.style.color = "blue"
+        newColor = "blue"
     }
     h1.style.color = newColor;
 }
 h1.addEventListener("click", handleTitleClick);
+
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick(){
+    const clickedClass = "clicked";
+    if (h1.classList.contains(clickedClass)){
+        h1.classList.remove(clickedClass);
+    }else { 
+        h1.classList.add(clickedClass);
+    }
+}
+h1.addEventListener("click", handleTitleClick);
+
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick(){
+    const clickedClass = "clicked";
+    h1.classList.toggle(clickedClass);
+    }
+h1.addEventListener("click", handleTitleClick);
+
+
+
